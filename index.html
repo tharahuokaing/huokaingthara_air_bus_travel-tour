@@ -1,209 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Huokaing Thara Air Travel & Tour | Premium Excursions & Travel Desk</title>
-  <meta name="description" content="Huokaing Thara Air Travel & Tour offers premier Angkor Wat temple tours, countryside ATV quad bike safaris, flight ticketing, and custom expedition packages in Siem Reap, Cambodia." />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Huokaing Thara Air Travel & Tour | Premier Aviation & Cultural Expeditions</title>
+  <meta name="description" content="Huokaing Thara Air Travel & Tour offers VIP air charter management, Angkorian heritage expeditions, and cross-border flight bookings across Southeast Asia.">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Header Navigation -->
-  <header class="navbar">
-    <div class="nav-container">
-      <div class="logo">
-        <span class="logo-accent">Huokaing Thara</span> Air Travel & Tour
+  <!-- Header Navigation & Global Language Controls -->
+  <header class="main-header">
+    <div class="header-container">
+      <div class="brand-logo">
+        <a href="#home">
+          <h1>HUOKAING THARA</h1>
+          <span>Air Travel & Tour</span>
+        </a>
       </div>
-      <nav class="nav-links">
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#guides">Destinations</a>
-        <a href="#articles">Expeditions</a>
-        <a href="#calculator">Estimator</a>
-        <a href="#kb">Knowledge Base</a>
-        <a href="#contact">Contact</a>
+
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#flight-search">Flight Booking</a></li>
+          <li><a href="#charter-services">VIP Charters</a></li>
+          <li><a href="#heritage-tours">Heritage Expeditions</a></li>
+          <li><a href="#etiquette-guide">Cultural Etiquette</a></li>
+          <li><a href="#opening-soon">Opening Soon</a></li>
+        </ul>
       </nav>
-      <button class="btn-primary" onclick="openBookingModal('General Inquiry')">Book Now</button>
+
+      <!-- Mount point for script11.js Language Switcher Widget -->
+      <div id="languageSelectorContainer" class="nav-lang-mount"></div>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <span class="badge">Siem Reap Destination Management & Travel Agency</span>
-      <h1>Discover Ancient Wonders & Frontier Expeditions</h1>
-      <p>
-        Welcome to <strong>Huokaing Thara Air Travel & Tour</strong>. We curate high-end guided temple circuits, rural countryside safaris, VIP airport ticketing, and upcoming wilderness expeditions across Cambodia.
-      </p>
-      <div class="hero-buttons">
-        <a href="#guides" class="btn-primary">Explore Packages</a>
-        <a href="#contact" class="btn-secondary">Visit Travel Desk</a>
+  <!-- Hero Banner & Flight Booking Interface -->
+  <section id="home" class="hero-section">
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <span class="hero-subtitle">Executive Aviation & Historical Discovery</span>
+        <h2>Elevate Your Journey Across Southeast Asia</h2>
+        <p>
+          Experience seamless air travel management, regional flight ticketing, and curated heritage expeditions. 
+          From private charter coordinates in Phnom Penh to ancient temple trails in Siem Reap, Huokaing Thara delivers unmatched safety, precision, and comfort.
+        </p>
       </div>
+
+      <!-- Mount point for Flight Search Engine Widget -->
+      <div id="flightSearchWidgetContainer" class="booking-widget-wrapper"></div>
     </div>
   </section>
 
-  <!-- Live Desk Availability Tracker (Handled by script4.js) -->
-  <section class="container" style="padding-top: 2rem; padding-bottom: 0;">
-    <div id="deskAvailabilityContainer"></div>
+  <!-- VIP Air Charter & Executive Flight Operations -->
+  <section id="charter-services" class="charter-section">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2>Executive Charter & Fleet Management</h2>
+        <p>Discreet, on-demand aerial transit customized for corporate executives, diplomatic delegations, and private heritage tours.</p>
+      </div>
+
+      <!-- Mount point for Fleet & Air Charter Cards -->
+      <div id="fleetContainer" class="fleet-grid"></div>
+
+      <!-- Comprehensive Article: Air Transit Infrastructure -->
+      <article class="long-form-article">
+        <h3>Pioneering Regional Air Connectivity & Executive Transit</h3>
+        <p>
+          Huokaing Thara Air Travel & Tour bridges major urban hubs and remote cultural landscapes. Modern regional aviation requires strict adherence to international safety protocols, optimized flight paths, and effortless ground-to-air connections.
+        </p>
+        <p>
+          Our fleet operations team coordinates customized charter itineraries, direct tarmac transfers, and fast-track customs clearance at primary aviation gateways including Phnom Penh International Airport, Siem Reap-Angkor International Airport, and Dara Sakor International Airport. Whether arranging a quick executive flight or a multi-stop aerial tour of ancient Khmer monuments, our flight desks maintain continuous monitoring and real-time navigation updates.
+        </p>
+      </article>
+    </div>
   </section>
 
-  <!-- About Section -->
-  <section id="about" class="about-section">
+  <!-- Interactive Tour Activity Filter Section -->
+  <section id="activity-filter" class="filter-section">
     <div class="container">
-      <div class="about-grid">
-        <div class="about-text">
-          <h2>About Huokaing Thara Air Travel & Tour</h2>
+      <div class="section-header text-center">
+        <h2>Interactive Tour & Activity Finder</h2>
+        <p>Filter active excursions by category, difficulty level, and physical exertion parameters.</p>
+      </div>
+
+      <div class="filter-controls">
+        <button class="filter-btn active" onclick="renderFilteredActivities('all')">All Expeditions</button>
+        <button class="filter-btn" onclick="renderFilteredActivities('culture')">Cultural Heritage</button>
+        <button class="filter-btn" onclick="renderFilteredActivities('water')">Water & Lake Transit</button>
+        <button class="filter-btn" onclick="renderFilteredActivities('trekking')">Wilderness Trekking</button>
+      </div>
+
+      <!-- Mount point for script8.js Filtered Activities Grid -->
+      <div id="filteredActivitiesContainer" class="filtered-activities-grid"></div>
+    </div>
+  </section>
+
+  <!-- Cultural Etiquette & Archaeological Preservation Guide -->
+  <section id="etiquette-guide" class="etiquette-section">
+    <div class="container">
+      <div class="etiquette-container">
+        <div class="section-header">
+          <h2>Cultural Etiquette & Heritage Preservation Guidelines</h2>
+          <p>Essential protocols for visiting ancient temples, sacred mountain sanctuaries, and local rural communities.</p>
+        </div>
+
+        <!-- Mount point for script8.js Etiquette Rules Grid -->
+        <div id="etiquetteContainer" class="etiquette-grid"></div>
+
+        <article class="long-form-article light-bg">
+          <h3>Preserving the Angkorian Stone Legacy for Future Generations</h3>
           <p>
-            Established near Sivutha Boulevard in Krong Siem Reap, <strong>Huokaing Thara Air Travel & Tour</strong> serves as a full-service travel desk and licensed destination agency. We bridge world-class travel standards with authentic local Khmer heritage.
+            The monuments of the Khmer Empire stand as living symbols of spiritual architecture and engineering. Visiting these delicate sandstone structures requires active mindfulness and cultural respect.
           </p>
           <p>
-            Whether organizing 5:00 AM Angkor Wat sunrise transfers, ticketing express regional flights, or arranging overland cross-border transit to Thailand and Vietnam, our dedicated team delivers precision, comfort, and unmatched local insight.
+            When exploring site enclosures like Angkor Wat, Bayon, or Banteay Srei, adhering to designated walkways prevents soil erosion and protects low-relief carvings from human oil degradation. Visitors are requested to observe modest attire guidelines, maintain moderate voice levels within active sanctuary chambers, and support community-led conservation initiatives that sustain local heritage artisans.
           </p>
-          <div class="stats-row">
-            <div class="stat-card">
-              <h3>5:00 AM</h3>
-              <p>Daily Early-Bird Departures</p>
-            </div>
-            <div class="stat-card">
-              <h3>100%</h3>
-              <p>Licensed Local Guides</p>
-            </div>
-            <div class="stat-card">
-              <h3>24/7</h3>
-              <p>Desk & Transit Support</p>
-            </div>
-          </div>
-        </div>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- Services Section -->
-  <section id="services" class="container">
-    <h2 class="section-title">Our Travel Services</h2>
-    <p class="section-subtitle">Comprehensive travel, tour logistics, and excursion management</p>
-    <div class="services-grid">
-      <div class="service-card">
-        <div class="icon">🛕</div>
-        <h3>Angkor Temple Circuits</h3>
-        <p>Private and small-group guided explorations covering Angkor Wat, Bayon, Ta Prohm, and remote jungle sanctuaries.</p>
-      </div>
-      <div class="service-card">
-        <div class="icon">🛵</div>
-        <h3>Countryside & ATV Safaris</h3>
-        <p>Eco-friendly e-scooter rides and sunset quad bike expeditions through rural Siem Reap rice fields and villages.</p>
-      </div>
-      <div class="service-card">
-        <div class="icon">✈️</div>
-        <h3>Flight & Ground Ticketing</h3>
-        <p>Instant booking for domestic flights, regional transfers, VIP express vans, and cross-border overland routes.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Destination Guides Section (Handled by script4.js) -->
-  <section id="guides" class="destinations-section">
+  <!-- Multi-Province Heritage Routes - Opening Soon -->
+  <section id="heritage-routes" class="heritage-routes-section">
     <div class="container">
-      <h2 class="section-title">Destination Guides & Circuits</h2>
-      <p class="section-subtitle">Explore active routes and preview upcoming regional charters</p>
-      <div id="destinationGuidesContainer" class="destinations-grid"></div>
+      <div class="section-header text-center">
+        <span class="badge-soon-large">Opening Soon</span>
+        <h2>Upcoming Multi-Province Overland & Aerial Routes</h2>
+        <p>Exclusive preview of upcoming heritage circuits currently undergoing site mapping and access clearing.</p>
+      </div>
+
+      <!-- Mount point for script8.js Heritage Opening Soon Articles -->
+      <div id="heritageOpeningSoonContainer" class="heritage-articles-grid"></div>
     </div>
   </section>
 
-  <!-- Opening Soon Spotlight Section (Handled by script2.js) -->
-  <section class="container">
-    <div id="spotlightContainer"></div>
-  </section>
-
-  <!-- Upcoming Expeditions Deep Dive Section (Handled by script5.js) -->
-  <section id="articles" class="upcoming-articles-section">
+  <!-- Multilingual Excursion Horizons Section -->
+  <section id="opening-soon" class="multilingual-articles-section">
     <div class="container">
-      <h2 class="section-title">Upcoming Frontier Expeditions</h2>
-      <p class="section-subtitle">Exclusive wilderness and highland charters — Opening Soon</p>
-      <div id="expeditionSpotlightContainer"></div>
+      <div class="section-header text-center">
+        <h2>Global Transit Horizons & Specialized Routes</h2>
+        <p>Discover future expansion routes, private river charters, and VIP air shuttles available with multilingual guides.</p>
+      </div>
+
+      <!-- Mount point for script11.js Multilingual Opening Soon Articles -->
+      <div id="multilingualArticlesContainer" class="multilingual-grid"></div>
+
+      <!-- Deep Dive Article: Future Cross-Border Expeditions -->
+      <article class="long-form-article dark-bg">
+        <h3>Expanding Horizons: Multi-Modal Transit Across the Mekong Basin</h3>
+        <p>
+          Huokaing Thara Air Travel & Tour continues to expand its logistical footprint across the Mekong region. Upcoming developments combine high-efficiency air connections with scenic riverboat charters, giving travel enthusiasts seamless access to untouched natural landscapes and remote archaeological reserves.
+        </p>
+        <p>
+          Our upcoming routes connect regional air hubs directly to provincial eco-reserves, coastal sanctuaries, and historic border sites. By partnering with local transport operators, conservation experts, and hospitality groups, each upcoming itinerary delivers comfortable transit while actively supporting regional economic growth and sustainable cultural tourism.
+        </p>
+      </article>
     </div>
   </section>
 
-  <!-- Dynamic Articles & Category Filter Section (Handled by script2.js) -->
-  <section class="articles-section">
+  <!-- Global Footer -->
+  <footer class="main-footer">
     <div class="container">
-      <div class="article-header">
-        <div>
-          <h2>Travel Journal & Articles</h2>
-          <p style="color: var(--text-muted); font-size: 0.95rem;">Insights, guides, and upcoming tour announcements</p>
+      <div class="footer-grid">
+        <div class="footer-col brand-col">
+          <h3>HUOKAING THARA</h3>
+          <p>Air Travel & Tour</p>
+          <p class="footer-desc">
+            Your premier aviation partner for regional flight bookings, private charter logistics, and authentic cultural expeditions across Southeast Asia.
+          </p>
         </div>
-        <div class="category-filter">
-          <button class="filter-btn active" data-category="All">All</button>
-          <button class="filter-btn" data-category="Guides">Guides</button>
-          <button class="filter-btn" data-category="Excursions">Excursions</button>
-          <button class="filter-btn" data-category="Culture">Culture</button>
+
+        <div class="footer-col">
+          <h4>Core Services</h4>
+          <ul>
+            <li><a href="#flight-search">Commercial Air Ticketing</a></li>
+            <li><a href="#charter-services">VIP Private Air Charters</a></li>
+            <li><a href="#activity-filter">Cultural Heritage Tours</a></li>
+            <li><a href="#heritage-routes">Overland Expedition Routes</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Heritage & Travel</h4>
+          <ul>
+            <li><a href="#etiquette-guide">Cultural Etiquette Guide</a></li>
+            <li><a href="#opening-soon">Upcoming Routes (Opening Soon)</a></li>
+            <li><a href="#opening-soon">Mekong River Charters</a></li>
+            <li><a href="#languageSelectorContainer">Language Options</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col contact-col">
+          <h4>Flight Desk & Reservations</h4>
+          <p>📍 Phnom Penh Head Office & Regional Desks</p>
+          <p>📧 Direct Inquiry: reservations@huokaingthara.com</p>
+          <p>📞 VIP Operations Desk: Available 24/7</p>
         </div>
       </div>
-      <div id="articlesContainer" class="articles-grid"></div>
-    </div>
-  </section>
 
-  <!-- Expandable Accordion Articles Section (Handled by script3.js) -->
-  <section class="container">
-    <h2 class="section-title">Expedition Briefings</h2>
-    <p class="section-subtitle">Deep dive into upcoming itinerary expansions tagged Opening Soon</p>
-    <div id="upcomingAccordionContainer" class="accordion-container"></div>
-  </section>
-
-  <!-- Interactive Tour Cost Estimator Section (Handled by script3.js) -->
-  <section id="calculator" class="container">
-    <div class="calculator-card">
-      <h2 style="color: var(--bg-dark); text-align: center; margin-bottom: 0.5rem;">Interactive Tour Cost Estimator</h2>
-      <p style="text-align: center; color: var(--text-muted);">Calculate real-time estimates for individual and group packages</p>
-      <form id="tourCalculator" class="calculator-form" onsubmit="event.preventDefault();">
-        <div class="form-group">
-          <label for="calcGuests">Number of Guests:</label>
-          <input type="number" id="calcGuests" min="1" max="20" value="2" />
-        </div>
-        <div class="form-group">
-          <label for="calcTourType">Select Tour Package:</label>
-          <select id="calcTourType">
-            <option value="angkor">Angkor Sunrise Circuit ($45/person)</option>
-            <option value="atv">Countryside ATV Quad Bike ($60/person)</option>
-            <option value="kulen">Phnom Kulen Wilderness [Opening Soon] ($75/person)</option>
-            <option value="battambang">Battambang Heritage Trail [Opening Soon] ($85/person)</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="calcTransport">Vehicle Type:</label>
-          <select id="calcTransport">
-            <option value="standard">Standard Air-Con Van</option>
-            <option value="private_car">Private SUV (+15%)</option>
-            <option value="vip_van">VIP Executive Charter (+25%)</option>
-          </select>
-        </div>
-        <div class="calculator-result">
-          <span>Estimated Total Cost:</span>
-          <span id="calcTotalDisplay" class="total-amount">$90 USD</span>
-        </div>
-      </form>
-    </div>
-  </section>
-
-  <!-- Knowledge Base Articles Section (Handled by script5.js) -->
-  <section id="kb" class="kb-section">
-    <div class="container">
-      <h2 class="section-title">Traveler Knowledge Base</h2>
-      <p class="section-subtitle">Essential transit advisories and expedition preparation guides</p>
-      <div id="kbArticlesContainer" class="kb-grid"></div>
-    </div>
-  </section>
-
-  <!-- Customer Reviews Section (Handled by script2.js) -->
-  <section class="container">
-    <h2 class="section-title">Traveler Experiences</h2>
-    <p class="section-subtitle">What guests say about Huokaing Thara Air Travel & Tour</p>
-    <div id="reviewsContainer" class="reviews-grid"></div>
-  </section>
-
-  <!-- Contact & Inquiry Section -->
+            <!-- Contact & Inquiry Section -->
   <section id="contact" class="container">
     <h2 class="section-title">Visit Our Siem Reap Desk</h2>
     <div class="contact-grid">
@@ -211,7 +206,7 @@
         <h3>Contact Details</h3>
         <ul>
           <li><strong>Agency Name:</strong> Huokaing Thara Air Travel & Tour</li>
-          <li><strong>Location:</strong> Sivutha Blvd Area, Krong Siem Reap, Cambodia</li>
+          <li><strong>Location:</strong> Sothearous Blvd, Phnom Penh, Cambodia</li>
           <li><strong>Operating Hours:</strong> Daily, 5:00 AM – 11:30 PM (ICT)</li>
           <li><strong>Direct Desk Phone:</strong> +855 87 204 155</li>
           <li><strong>Email Desk:</strong> tharahuokaing@gmail.com</li>
@@ -237,40 +232,24 @@
       </div>
     </div>
   </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container" style="padding: 0;">
-      <p>&copy; Huokaing Thara Air Travel & Tour. All rights reserved. Registered Travel Agency & Destination Management Company in Siem Reap, Cambodia.</p>
+      
+      <div class="footer-bottom text-center">
+        <p>&copy; Huokaing Thara Air Travel & Tour. All rights reserved. Designed for premier regional aviation and cultural preservation.</p>
+      </div>
     </div>
   </footer>
 
-  <!-- Booking Modal (Triggered by openBookingModal) -->
-  <div id="bookingModal" class="modal">
-    <div class="modal-content">
-      <span class="close-btn" onclick="closeBookingModal()">&times;</span>
-      <h3 style="margin-bottom: 1rem; color: var(--bg-dark);">Reservation Desk Inquiry</h3>
-      <form id="modalInquiryForm" onsubmit="event.preventDefault(); alert('Inquiry recorded with Huokaing Thara Air Travel & Tour desk.'); closeBookingModal();">
-        <input type="text" placeholder="Full Name" required style="width:100%; padding:0.75rem; margin-bottom:1rem; border:1px solid var(--border-color); border-radius:6px;" />
-        <input type="email" placeholder="Email Address" required style="width:100%; padding:0.75rem; margin-bottom:1rem; border:1px solid var(--border-color); border-radius:6px;" />
-        <button type="submit" class="btn-primary full-width">Submit Inquiry</button>
-      </form>
-    </div>
-  </div>
-
-  <!-- Deep Article Reader Modal (Handled by script4.js) -->
-  <div id="articleReaderModal" class="modal">
-    <div class="modal-content" style="max-width: 650px;">
-      <span class="close-btn" onclick="closeArticleReaderModal()">&times;</span>
-      <div id="articleReaderContent"></div>
-    </div>
-  </div>
-
-  <!-- All JavaScript Modules -->
+  <!-- Universal Modular JavaScript Files (script1.js through script11.js) -->
   <script src="script1.js"></script>
   <script src="script2.js"></script>
   <script src="script3.js"></script>
   <script src="script4.js"></script>
   <script src="script5.js"></script>
+  <script src="script6.js"></script>
+  <script src="script7.js"></script>
+  <script src="script8.js"></script>
+  <script src="script9.js"></script>
+  <script src="script10.js"></script>
+  <script src="script11.js"></script>
 </body>
 </html>
