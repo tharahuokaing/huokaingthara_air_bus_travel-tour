@@ -857,3 +857,171 @@ body {
 .accordion-item.open .accordion-icon {
   transform: rotate(45deg);
 }
+
+/* Destination Guides, Availability Widget & Interactive Map Extensions */
+
+/* Destination Guides Grid */
+.destinations-section {
+  background-color: var(--bg-light);
+  padding: 4.5rem 0;
+  border-top: 1px solid var(--border-color);
+}
+
+.destinations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.destination-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  display: flex;
+  flex-direction: column;
+}
+
+.destination-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.destination-header {
+  background: linear-gradient(135deg, var(--bg-dark) 0%, var(--bg-dark-secondary) 100%);
+  color: var(--text-light);
+  padding: 1.5rem;
+  position: relative;
+}
+
+.destination-header h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.destination-header .location-tag {
+  font-size: 0.85rem;
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.destination-body {
+  padding: 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.destination-body p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 1.25rem;
+}
+
+/* Desk Status & Live Seat Availability Tracker */
+.availability-tracker {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 3rem 0;
+  box-shadow: var(--shadow-sm);
+}
+
+.tracker-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.status-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--primary-dark);
+  background-color: rgba(0, 235, 91, 0.12);
+  padding: 0.35rem 0.85rem;
+  border-radius: 20px;
+}
+
+.pulse-dot {
+  width: 8px;
+  height: 8px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 rgba(0, 235, 91, 0.7);
+  animation: pulse 1.8s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(0, 235, 91, 0.7); }
+  70% { transform: scale(1); box-shadow: 0 0 0 6px rgba(0, 235, 91, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(0, 235, 91, 0); }
+}
+
+.seats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.seat-slot {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: var(--bg-light);
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.seat-slot strong {
+  font-size: 0.95rem;
+  color: var(--bg-dark);
+}
+
+.seat-slot span {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* Detailed Long-Form Article Modal Layout */
+.article-modal-body {
+  max-height: 70vh;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+  line-height: 1.7;
+  color: var(--text-dark);
+}
+
+.article-modal-body h2 {
+  color: var(--bg-dark);
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.article-modal-body p {
+  margin-bottom: 1rem;
+  color: var(--text-muted);
+}
+
+.article-modal-body ul {
+  margin: 1rem 0 1.5rem 1.25rem;
+  color: var(--text-muted);
+}
+
+.article-modal-body li {
+  margin-bottom: 0.5rem;
+}
+
+
