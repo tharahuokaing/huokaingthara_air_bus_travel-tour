@@ -1564,6 +1564,158 @@ body {
   font-size: 0.8rem;
 }
 
+/* Insurance Advisory, VIP Charter Portal & Remote Heritage Extensions */
+
+/* Emergency & Insurance Advisory Section */
+.insurance-section {
+  background-color: var(--bg-light);
+  padding: 5rem 0;
+  border-top: 1px solid var(--border-color);
+}
+
+.insurance-container {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 2.5rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.insurance-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.insurance-card {
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1.75rem;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  transition: border-color var(--transition-fast);
+}
+
+.insurance-card:hover {
+  border-color: var(--primary-dark);
+}
+
+.insurance-card .ins-icon {
+  font-size: 2.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.insurance-card h4 {
+  font-size: 1.2rem;
+  color: var(--bg-dark);
+  margin-bottom: 0.5rem;
+}
+
+.insurance-card p {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+
+/* VIP Luxury Charter Portal */
+.charter-section {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  padding: 5rem 0;
+  position: relative;
+}
+
+.charter-card {
+  background: var(--bg-dark-secondary);
+  border: 1px solid rgba(0, 235, 91, 0.25);
+  border-radius: 16px;
+  padding: 2.5rem;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 992px) {
+  .charter-card {
+    grid-template-columns: 1.5fr 1fr;
+  }
+}
+
+.charter-details h3 {
+  font-size: 1.75rem;
+  color: var(--primary-color);
+  margin-bottom: 0.75rem;
+}
+
+.charter-details p {
+  color: #c2dcd0;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.charter-spec-list {
+  list-style: none;
+  font-size: 0.92rem;
+  color: #a8c4b0;
+  margin-bottom: 1.5rem;
+}
+
+.charter-spec-list li {
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Remote Heritage Opening Soon Articles Grid */
+.remote-heritage-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+
+.remote-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+}
+
+.remote-header {
+  background: linear-gradient(135deg, var(--bg-dark) 0%, var(--bg-dark-secondary) 100%);
+  color: var(--text-light);
+  padding: 1.75rem;
+}
+
+.remote-header h3 {
+  font-size: 1.35rem;
+  color: var(--text-light);
+  margin-bottom: 0.35rem;
+}
+
+.remote-body {
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.remote-body p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.65;
+  margin-bottom: 1.25rem;
+}
+
 /* Currency Converter, Interactive Route Planner & Regional Route Extensions */
 
 /* Multi-Currency Calculator Section */
@@ -1717,6 +1869,192 @@ body {
 }
 
 .longform-body p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.65;
+  margin-bottom: 1.25rem;
+}
+
+/* VIP Loyalty Tier, Route Estimator & Coastal Expedition Extensions */
+
+/* Loyalty VIP Portal Section */
+.loyalty-section {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  padding: 5rem 0;
+  border-top: 1px solid rgba(0, 235, 91, 0.15);
+}
+
+.loyalty-container {
+  background: var(--bg-dark-secondary);
+  border: 1px solid rgba(0, 235, 91, 0.25);
+  border-radius: 16px;
+  padding: 2.5rem;
+  box-shadow: var(--shadow-lg);
+}
+
+.loyalty-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.tier-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  transition: border-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.tier-card:hover {
+  border-color: var(--primary-color);
+  transform: translateY(-4px);
+}
+
+.tier-card.active-tier {
+  border-color: var(--accent-gold);
+  background: rgba(212, 175, 55, 0.05);
+}
+
+.tier-badge {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--accent-gold);
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.tier-card h4 {
+  font-size: 1.3rem;
+  color: var(--text-light);
+  margin-bottom: 0.5rem;
+}
+
+.tier-card p {
+  font-size: 0.9rem;
+  color: #c2dcd0;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+
+.tier-benefits-list {
+  list-style: none;
+  font-size: 0.88rem;
+  color: #a8c4b0;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.tier-benefits-list li {
+  margin-bottom: 0.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+/* Route Distance & Duration Estimator */
+.estimator-section {
+  background-color: var(--bg-light);
+  padding: 4.5rem 0;
+}
+
+.estimator-box {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  padding: 2rem;
+  box-shadow: var(--shadow-sm);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.estimator-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.estimator-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.estimator-field label {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--bg-dark);
+}
+
+.estimator-field select {
+  padding: 0.65rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  font-size: 0.95rem;
+  background-color: #ffffff;
+}
+
+.estimator-result-card {
+  background: var(--bg-dark);
+  color: var(--text-light);
+  border-radius: 10px;
+  padding: 1.25rem 1.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.estimator-result-card span {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+/* Opening Soon Multi-Route Articles */
+.coastal-articles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+
+.coastal-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+}
+
+.coastal-header {
+  background: linear-gradient(135deg, var(--bg-dark) 0%, var(--bg-dark-secondary) 100%);
+  color: var(--text-light);
+  padding: 1.75rem;
+}
+
+.coastal-header h3 {
+  font-size: 1.35rem;
+  color: var(--text-light);
+  margin-bottom: 0.35rem;
+}
+
+.coastal-body {
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.coastal-body p {
   color: var(--text-muted);
   font-size: 0.95rem;
   line-height: 1.65;
