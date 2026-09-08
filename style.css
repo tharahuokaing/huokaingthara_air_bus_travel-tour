@@ -1197,3 +1197,529 @@ body {
   display: block;
   animation: fadeIn 0.3s ease-in-out;
 }
+
+/* Interactive Custom Route Builder, Travel FAQ & Province Guides Extensions */
+
+/* Custom Itinerary Builder Section */
+.builder-section {
+  background-color: var(--bg-light);
+  padding: 5rem 0;
+  border-top: 1px solid var(--border-color);
+}
+
+.builder-container {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 2.5rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.builder-step-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--bg-dark);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.builder-step-title span {
+  background-color: var(--primary-color);
+  color: var(--bg-dark);
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+
+.destinations-selector {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.select-card {
+  border: 2px solid var(--border-color);
+  border-radius: 10px;
+  padding: 1.25rem;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  background-color: #ffffff;
+  position: relative;
+}
+
+.select-card:hover {
+  border-color: var(--primary-dark);
+}
+
+.select-card.selected {
+  border-color: var(--primary-color);
+  background-color: rgba(0, 235, 91, 0.05);
+}
+
+.select-card h5 {
+  font-size: 1rem;
+  color: var(--bg-dark);
+  margin-bottom: 0.3rem;
+}
+
+.select-card p {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.builder-summary-box {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  border-radius: 12px;
+  padding: 1.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.builder-summary-info h4 {
+  color: var(--primary-color);
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.builder-summary-info p {
+  font-size: 0.9rem;
+  color: #c2dcd0;
+}
+
+/* Province Multi-Route Article Cards */
+.province-articles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.province-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+}
+
+.province-card-body {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.province-card h3 {
+  font-size: 1.4rem;
+  color: var(--bg-dark);
+  margin-bottom: 0.5rem;
+}
+
+.province-card p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+/* FAQ Drawer Styling */
+.faq-section {
+  padding: 4.5rem 0;
+  background-color: #ffffff;
+}
+
+.faq-list {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--border-color);
+  padding: 1.25rem 0;
+}
+
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--bg-dark);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.faq-item.open .faq-answer {
+  padding-top: 0.75rem;
+}
+
+/* Flight Desk, Travel Advisory & Regional Expansion Extensions */
+
+/* Flight & Transit Booking Module */
+.transit-section {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  padding: 5rem 0;
+}
+
+.transit-container {
+  background: var(--bg-dark-secondary);
+  border: 1px solid rgba(0, 235, 91, 0.2);
+  border-radius: 16px;
+  padding: 2.5rem;
+  box-shadow: var(--shadow-lg);
+}
+
+.transit-header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.transit-header h3 {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.transit-header p {
+  color: #a8c4b0;
+  font-size: 1rem;
+}
+
+.transit-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.transit-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: all var(--transition-fast);
+}
+
+.transit-card:hover {
+  border-color: var(--primary-color);
+  background: rgba(0, 235, 91, 0.05);
+}
+
+.transit-card .route-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent-gold);
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.transit-card h4 {
+  font-size: 1.2rem;
+  color: var(--text-light);
+  margin-bottom: 0.4rem;
+}
+
+.transit-card p {
+  font-size: 0.88rem;
+  color: #c2dcd0;
+  margin-bottom: 1rem;
+}
+
+/* Seasonality & Weather Travel Advisory Widget */
+.advisory-section {
+  background-color: var(--bg-light);
+  padding: 4.5rem 0;
+  border-top: 1px solid var(--border-color);
+}
+
+.advisory-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.advisory-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1.75rem;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+}
+
+.advisory-card .season-icon {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.advisory-card h4 {
+  font-size: 1.2rem;
+  color: var(--bg-dark);
+  margin-bottom: 0.5rem;
+}
+
+.advisory-card p {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* Regional Opening Soon Deep Articles Grid */
+.regional-articles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+
+.regional-article-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.regional-article-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.regional-article-header {
+  background: linear-gradient(135deg, var(--bg-dark) 0%, var(--bg-dark-secondary) 100%);
+  color: var(--text-light);
+  padding: 1.75rem;
+  position: relative;
+}
+
+.regional-article-header h3 {
+  font-size: 1.35rem;
+  color: var(--text-light);
+  margin-bottom: 0.4rem;
+}
+
+.regional-article-body {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.regional-article-body p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.65;
+  margin-bottom: 1.5rem;
+}
+
+.regional-highlights-list {
+  list-style: none;
+  margin-bottom: 1.75rem;
+  font-size: 0.9rem;
+  color: var(--text-dark);
+}
+
+.regional-highlights-list li {
+  padding: 0.35rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.regional-highlights-list li::before {
+  content: "✦";
+  color: var(--primary-dark);
+  font-size: 0.8rem;
+}
+
+/* Currency Converter, Interactive Route Planner & Regional Route Extensions */
+
+/* Multi-Currency Calculator Section */
+.currency-section {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  padding: 4.5rem 0;
+  border-top: 1px solid rgba(0, 235, 91, 0.15);
+}
+
+.currency-container {
+  background: var(--bg-dark-secondary);
+  border: 1px solid rgba(0, 235, 91, 0.2);
+  border-radius: 16px;
+  padding: 2.5rem;
+  box-shadow: var(--shadow-lg);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.currency-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.currency-box {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.currency-box label {
+  font-size: 0.85rem;
+  color: #a8c4b0;
+  font-weight: 600;
+}
+
+.currency-box input,
+.currency-box select {
+  background: var(--bg-dark);
+  border: 1px solid var(--border-color);
+  color: var(--text-light);
+  padding: 0.65rem;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.converted-result-card {
+  grid-column: 1 / -1;
+  background-color: var(--primary-color);
+  color: var(--bg-dark);
+  padding: 1.25rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+
+/* Custom Route Interactive Planner */
+.route-planner-section {
+  background-color: var(--bg-light);
+  padding: 4.5rem 0;
+}
+
+.planner-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.75rem;
+  margin-top: 2rem;
+}
+
+.planner-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1.75rem;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.planner-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.planner-card h4 {
+  font-size: 1.2rem;
+  color: var(--bg-dark);
+}
+
+.planner-card p {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+
+/* Long-Form Regional Excursion Articles Grid */
+.longform-articles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+
+.longform-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.longform-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.longform-header {
+  background: linear-gradient(135deg, var(--bg-dark) 0%, var(--bg-dark-secondary) 100%);
+  color: var(--text-light);
+  padding: 1.75rem;
+}
+
+.longform-header h3 {
+  font-size: 1.35rem;
+  color: var(--text-light);
+  margin-bottom: 0.35rem;
+}
+
+.longform-body {
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.longform-body p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.65;
+  margin-bottom: 1.25rem;
+}
+
