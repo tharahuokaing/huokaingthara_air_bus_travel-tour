@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Huokaing Thara Air Travel & Tour | Premium Siem Reap Excursions</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <span class="logo-accent">Huokaing Thara</span> Air Travel & Tour
+      </div>
+      <nav class="nav-links">
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#itineraries">Featured Tours</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="btn-primary" onclick="openBookingModal()">Book a Tour</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="badge">Official Travel Partner in Siem Reap</span>
+      <h1>Discover Ancient Wonders & Unforgettable Adventures</h1>
+      <p>
+        Welcome to <strong>Huokaing Thara Air Travel & Tour</strong>. We curate premium, custom-designed journey itineraries across the historic Angkor region and greater Cambodia. From sacred sunrise temple tours to eco-friendly countryside explorations, we handle every detail of your journey.
+      </p>
+      <div class="hero-buttons">
+        <a href="#itineraries" class="btn-primary">Explore Packages</a>
+        <a href="#contact" class="btn-secondary">Contact Desk</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <h2>About Huokaing Thara Air Travel & Tour</h2>
+          <p>
+            Established in the heart of Siem Reap, <strong>Huokaing Thara Air Travel & Tour</strong> operates as a premier full-service destination management provider and licensed tour agency. Located conveniently near Sivutha Boulevard, our agency serves as a welcoming home base for global travelers seeking deep immersion into Khmer heritage and natural landscapes.
+          </p>
+          <p>
+            Whether you are embarking on a world-class archaeological pilgrimage through Angkor Wat, organizing fast-track air tickets, or booking countryside quad-bike sunset safaris, our dedicated multi-lingual staff ensures exceptional safety, comfort, and authenticity.
+          </p>
+          <div class="stats-row">
+            <div class="stat-card">
+              <h3>5:00 AM</h3>
+              <p>Daily Early-Bird Start</p>
+            </div>
+            <div class="stat-card">
+              <h3>100%</h3>
+              <p>Licensed Local Guides</p>
+            </div>
+            <div class="stat-card">
+              <h3>24/7</h3>
+              <p>Customer Support</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services-section">
+    <div class="container">
+      <h2 class="section-title">Our Premium Services</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="icon">🛕</div>
+          <h3>Angkor Temple Excursions</h3>
+          <p>Full and multi-day guided tours through Angkor Wat, Bayon, Ta Prohm, and remote jungle complexes like Banteay Srei.</p>
+        </div>
+        <div class="service-card">
+          <div class="icon">🛵</div>
+          <h3>E-Scooter & Countryside Safaris</h3>
+          <p>Eco-friendly electric scooter rides along scenic paths and thrilling ATV Quad Bike excursions during rural sunsets.</p>
+        </div>
+        <div class="service-card">
+          <div class="icon">✈️</div>
+          <h3>Flight & Ground Ticketing</h3>
+          <p>Instant booking for domestic and international air travel, express airport VIP transfers, and cross-border bus logistics.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Info & Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2 class="section-title">Visit Our Siem Reap Desk</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Contact Details</h3>
+          <ul>
+            <li><strong>Agency Name:</strong> Huokaing Thara Air Travel & Tour</li>
+            <li><strong>Location:</strong> Krong Siem Reap, Siem Reap Province, Cambodia</li>
+            <li><strong>Operating Hours:</strong> Daily, 5:00 AM – 11:30 PM (ICT)</li>
+            <li><strong>Direct Phone:</strong> +855 61 222 720</li>
+            <li><strong>Email Desk:</strong> bookings@huokaingthara-travel.com</li>
+          </ul>
+        </div>
+        <div class="booking-card">
+          <h3>Quick Inquiry</h3>
+          <form id="inquiryForm">
+            <input type="text" id="name" placeholder="Your Full Name" required />
+            <input type="email" id="email" placeholder="Your Email Address" required />
+            <select id="tourType" required>
+              <option value="">Select Preferred Service</option>
+              <option value="angkor">Angkor Sunrise Tour</option>
+              <option value="atv">Countryside ATV Quad Bike</option>
+              <option value="flight">Flight & Ticketing</option>
+              <option value="custom">Custom Itinerary</option>
+            </select>
+            <textarea id="message" rows="4" placeholder="How can Huokaing Thara Air Travel & Tour help you?"></textarea>
+            <button type="submit" class="btn-primary full-width">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 Huokaing Thara Air Travel & Tour. All rights reserved. Registered Travel Agency in Siem Reap, Cambodia.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
