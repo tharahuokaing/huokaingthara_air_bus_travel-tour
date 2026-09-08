@@ -2091,3 +2091,112 @@ body {
   margin-bottom: 1.25rem;
 }
 
+/* Google Translate Widget, Language Switcher & Multilingual Article Extensions */
+
+/* Language Selector Floating/Header Widget */
+.lang-switcher-container {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-color);
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  position: relative;
+}
+
+.lang-switcher-label {
+  font-size: 0.85rem;
+  color: #a8c4b0;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.lang-dropdown-select {
+  background: var(--bg-dark);
+  color: var(--text-light);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  transition: border-color var(--transition-fast);
+}
+
+.lang-dropdown-select:hover {
+  border-color: var(--primary-color);
+}
+
+/* Hide default Google Translate banner frame for a clean custom look */
+.goog-te-banner-frame {
+  display: none !important;
+}
+
+body {
+  top: 0px !important;
+}
+
+#google_translate_element {
+  display: none;
+}
+
+/* Multilingual Opening Soon Section */
+.multilingual-articles-section {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  padding: 5rem 0;
+  border-top: 1px solid rgba(0, 235, 91, 0.2);
+}
+
+.multilingual-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+
+.multilingual-card {
+  background: var(--bg-dark-secondary);
+  border: 1px solid rgba(0, 235, 91, 0.15);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  flex-direction: column;
+  transition: border-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.multilingual-card:hover {
+  border-color: var(--primary-color);
+  transform: translateY(-4px);
+}
+
+.multilingual-header {
+  padding: 1.75rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.multilingual-header h3 {
+  font-size: 1.35rem;
+  color: var(--primary-color);
+  margin-bottom: 0.4rem;
+}
+
+.multilingual-body {
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.multilingual-body p {
+  color: #c2dcd0;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  margin-bottom: 1.25rem;
+}
