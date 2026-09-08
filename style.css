@@ -2200,3 +2200,47 @@ body {
   line-height: 1.65;
   margin-bottom: 1.25rem;
 }
+
+/* script for Image Centered Fullscreen Hero Image Section */
+.hero-fullscreen {
+  position: relative;
+  width: 100%;
+  min-height: 60vh;
+  max-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: var(--bg-dark, #0b1320);
+}
+
+.hero-fullscreen .img-full-cover {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  max-height: 75vh;
+  object-fit: contain;
+  object-position: center;
+  margin: 0 auto;
+  display: block;
+}
+
+.hero-fullscreen .hero-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1200px;
+  padding: 1.5rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0) 100%);
+  text-align: center;
+}
+
+.hero-fullscreen .hero-overlay h1 {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 0;
+}
