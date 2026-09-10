@@ -2091,91 +2091,112 @@ body {
   margin-bottom: 1.25rem;
 }
 
-/* =========================================================
-   GOOGLE TRANSLATE UI OVERRIDES
-========================================================= */
+/* Script11 Google Translate Widget, Language Switcher & Multilingual Article Extensions */
 
-/* Hide the top Google banner iframe that appears on translation */
+/* Language Selector Floating/Header Widget */
+.lang-switcher-container {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-color);
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  position: relative;
+}
+
+.lang-switcher-label {
+  font-size: 0.85rem;
+  color: #a8c4b0;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.lang-dropdown-select {
+  background: var(--bg-dark);
+  color: var(--text-light);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  transition: border-color var(--transition-fast);
+}
+
+.lang-dropdown-select:hover {
+  border-color: var(--primary-color);
+}
+
+/* Hide default Google Translate banner frame for a clean custom look */
+.goog-te-banner-frame {
+  display: none !important;
+}
+
 body {
-    top: 0 !important;
+  top: 0px !important;
 }
 
-.goog-te-banner-frame.skiptranslate {
-    display: none !important;
+#google_translate_element {
+  display: none;
 }
 
-/* Style the Google Translate dropdown container */
-#google_translate_element select {
-    background-color: #0f172a;
-    color: #38bdf8;
-    border: 1px solid #2b313a;
-    padding: 6px 10px;
-    border-radius: 6px;
-    font-size: 0.85rem;
-    font-weight: bold;
-    cursor: pointer;
-    outline: none;
+/* Multilingual Opening Soon Section */
+.multilingual-articles-section {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  padding: 5rem 0;
+  border-top: 1px solid rgba(0, 235, 91, 0.2);
 }
 
-#google_translate_element select:hover {
-    border-color: #38bdf8;
+.multilingual-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 2rem;
+  margin-top: 2.5rem;
 }
 
-/* Hide Google branding tooltips if desired */
-.goog-logo-link {
-    display: none !important;
+.multilingual-card {
+  background: var(--bg-dark-secondary);
+  border: 1px solid rgba(0, 235, 91, 0.15);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  flex-direction: column;
+  transition: border-color var(--transition-fast), transform var(--transition-fast);
 }
 
-.goog-te-gadget {
-    color: transparent !important;
+.multilingual-card:hover {
+  border-color: var(--primary-color);
+  transform: translateY(-4px);
 }
 
-/* =========================================================
-   HUOKAING THARA SYSTEM - ADDITIONAL UI & TRANSLATE STYLES
-========================================================= */
-
-/* Alignment for Table Actions and Translate Widget */
-.module-header .action-buttons {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    flex-wrap: wrap;
+.multilingual-header {
+  padding: 1.75rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-bottom: 1px solid var(--border-color);
 }
 
-/* Enhanced Google Translate Dropdown Styling */
-.goog-te-gadget-simple {
-    background-color: #0f172a !important;
-    border: 1px solid #2b313a !important;
-    padding: 6px 10px !important;
-    border-radius: 6px !important;
-    font-size: 0.85rem !important;
+.multilingual-header h3 {
+  font-size: 1.35rem;
+  color: var(--primary-color);
+  margin-bottom: 0.4rem;
 }
 
-.goog-te-gadget-simple span {
-    color: #38bdf8 !important;
-    font-weight: bold;
+.multilingual-body {
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
-.goog-te-gadget-simple img {
-    display: none !important;
-}
-
-/* Sleeker Hover and Active States for Ledger Buttons */
-.btn-remove-ledger {
-    transition: all 0.2s ease-in-out;
-    box-shadow: 0 2px 4px rgba(246, 70, 93, 0.2);
-}
-
-.btn-remove-ledger:hover {
-    background-color: #ff5268 !important;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(246, 70, 93, 0.4);
-}
-
-/* Responsive Table Adjustments */
-@media(max-width: 768px) {
-    .deposit-table th, .deposit-table td {
-        padding: 10px 10px;
-        font-size: 0.8rem;
-    }
+.multilingual-body p {
+  color: #c2dcd0;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  margin-bottom: 1.25rem;
 }
